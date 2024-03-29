@@ -24,8 +24,38 @@ This project showcases expertise in data visualization using Excel and data anal
 This project involved analyzing a year's worth of sales data from a fictitious pizza place using Power BI. The data included details on orders, pizzas (type, size, quantity, price, ingredients), and timestamps.
 The analysis aimed to:
 Understand customer behavior: Determine the number of customers per day, identify peak hours, and measure average order size. Identify bestsellers and sales trends: Analyze pizza order frequency and total revenue to discover the most popular pizzas and track seasonality in sales. Optimize the menu and promotions: Leverage data insights to identify underperforming pizzas and suggest potential menu changes or promotions based on customer preferences. The project utilized DAX (Data Analysis Expressions) within Power BI to create various calculations.
+
 Distinct order count: Count the number of unique orders each day. Total sales: Calculate the overall revenue generated throughout the year. Average pizzas per order: Divide the total quantity of pizzas by the total number of orders. Peak hours: Categorize orders into time slots based on timestamps to identify peak hours for sales. This project demonstrates proficiency in data analysis using Power BI, DAX calculations, and business intelligence concepts. It showcases the ability to extract valuable insights from data to inform decision-making and improve business operations.
 Implemented interactive filters for exploration by pizza type, size, and order date.
 Employed charts and graphs to reveal trends in sales, customer preferences, and revenue generation.
+
 This project showcases expertise in data analysis, data visualization using Power BI, and creating informative dashboards. 
 
+# 3] Fruits and Vegetables Image Classification using TensorFlow -
+
+
+## Overview
+This project presents a deep learning approach to classify images of fruits and vegetables using TensorFlow. It encompasses the entire workflow from data preprocessing, through building and training a neural network model, to deployment as .keras extension . 
+
+## Dataset
+The dataset consists of images of various fruits and vegetables organized in folders by category. This diverse dataset is crucial for training our model to recognize different types of fruits and vegetables accurately.
+
+## Data Preprocessing
+The preprocessing steps include:
+
+Resizing images to a uniform size
+Normalizing pixel values
+Converting image files from folders into TensorFlow arrays for model training
+Model Architecture
+The deep learning model is built using TensorFlow's Sequential API, comprising:
+
+## Convolutional Layers: For extracting features from the images
+Pooling Layers: To reduce the dimensionality of the feature maps
+Flatten Layer: To convert the 2D feature maps into a 1D vector
+Dense Layers (Fully Connected Layers): For classification
+
+## Evaluation
+The model's performance is evaluated using a separate test dataset not seen by the model during training, ensuring the evaluation is unbiased.
+
+## Deployment
+The trained model is deployed as a web application using.keras extension . 
