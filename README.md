@@ -39,7 +39,7 @@ This project presents a deep learning approach to classify images of fruits and 
 
 ## Dataset
 The dataset consists of images of various fruits and vegetables organized in folders by category. This diverse dataset is crucial for training our model to recognize different types of fruits and vegetables accurately.
-
+ DATASET LINK - https://drive.google.com/file/d/1CGiAWso43GCsNo_faRq4jdDIlmwy7YI4/view
 ## Data Preprocessing
 The preprocessing steps include:
 
