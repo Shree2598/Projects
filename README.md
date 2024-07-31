@@ -8,16 +8,41 @@ LMT Prediction with Surgical Precision: Our model pinpoints price within a narro
 
 Beyond Bullseye: LMT prediction paves the way for next-level market forecasting, influencing crucial investment decisions with data-driven confidence. Evolution of Stock Insight: This LMT success marks a milestone, propelling our model towards unlocking even greater predictive power and market wisdom.
 
-# 2] ECO-FRIENDLY-CAR-SALES - DASHBOARD-EXCEL
+# 2] ADIDAS SALES DASHBOARD IN EXCEL
 
-Designed and developed EF-PRICE-DASHBOARD in Excel, leveraging pivot tables to analyse EV price distributions across various demographics gender, ethnicity, region and car types.
-Employed advanced Excel skills to clean, filter, and transform data, resulting in actionable insights for stakeholders.
-Created compelling visualizations to effectively communicate data patterns and trends, driving data-driven decision-making. Contributed to a project that promotes environmentally friendly car adoption by providing data-backed insights
+**Interactive Sales Dashboard for Adidas**
+- Developed an advanced Excel dashboard to visualize and analyze Adidas sales data dynamically.
+- Utilized pivot tables and various chart types (line, map, bar, and donut charts) for comprehensive data representation.
+- Implemented slicers for year, product, and region to enable real-time data filtering and interactivity.
+- Enhanced visual appeal and usability with consistent formatting, color schemes, and intuitive layout design.
+- Enabled data-driven decision-making by providing clear insights into sales trends, regional performance, and sales methods.
+- Demonstrated strong skills in data analysis, Excel functionalities, and dashboard creation.
 
-Created an interactive Excel dashboard to explore car sales data.
-Implemented filters and segmentation options for criteria like customer demographics, vehicle features, and sales region.
-Incorporated charts and graphs to visually represent trends and patterns in sales data.
-This project showcases expertise in data visualization using Excel and data analysis skills.
+
+**Adidas Sales Dashboard in Excel**
+
+**Overview:**
+This project demonstrates the creation of a dynamic and interactive sales dashboard for Adidas using Microsoft Excel. The dashboard visualizes sales data through various charts and enables real-time filtering with slicers for enhanced data analysis.
+
+**Features:**
+- **Data Visualization:** Line charts, map charts, bar charts, and donut charts to represent sales trends, regional performance, sales by retailer, and sales methods.
+- **Dynamic Filtering:** Slicers for year, product, and region allowing users to interactively filter data and update charts in real time.
+- **Enhanced Formatting:** Consistent color schemes, formatting, and layout design for a professional and intuitive user experience.
+- **Pivot Tables:** Used pivot tables for data summarization and chart creation, ensuring accurate and comprehensive data representation.
+
+**Steps Included:**
+1. **Data Preparation:** Cleaned and organized raw sales data for analysis.
+2. **Pivot Table Creation:** Summarized sales data by period, region, retailer, and method.
+3. **Chart Generation:** Developed various charts to visualize the summarized data.
+4. **Dashboard Design:** Designed the dashboard layout, added shapes, text boxes, and background images for a polished look.
+5. **Slicer Integration:** Implemented slicers to allow dynamic filtering and linked them to all relevant charts and pivot tables.
+6. **Final Touches:** Refined the slicers, removed unnecessary elements, and ensured all components were responsive to user input.
+
+**Usage:**
+- **Business Analysis:** Provides insights into sales performance across different periods, regions, and methods.
+- **Decision Making:** Helps stakeholders make data-driven decisions based on clear and interactive visualizations.
+- **Reporting:** Offers a comprehensive and visually appealing way to present sales data in reports and presentations.
+
 
 # 3] PIZZA-ANALYSIS-DASHBOARD-POWER-BI -
 
@@ -31,16 +56,126 @@ Employed charts and graphs to reveal trends in sales, customer preferences, and 
 
 This project showcases expertise in data analysis, data visualization using Power BI, and creating informative dashboards. 
 
-# 3] LOAN REPAYMENT PREDICTION
+# 3] HOTEL BOOKING DATA ANALYSIS PROJECT
 
-"An ensemble learning-based predictive model designed to assess loan repayment risks. The project utilizes various machine learning techniques, including Decision Trees, Random Forest, and AdaBoost, to predict the likelihood of loan default based on financial indicators from loan applicants. This repository contains the code, dataset, and documentation for training and evaluating the model, aiming to assist financial institutions in making informed lending decisions."
+**SQL and Power BI Hotel Booking Data Analysis Project**
 
-"This project hosts an advanced ensemble learning framework designed to enhance predictive accuracy in the assessment of loan repayment risks. It combines robust machine learning algorithms such as Decision Trees, Random Forest, and AdaBoost to analyze and predict potential loan defaults. Key features of the project include:
+- **Data Integration**: Combined hotel booking data from 2018, 2019, and 2020 using SQL UNION operations.
+- **Exploratory Data Analysis (EDA)**: Conducted EDA to determine yearly revenue growth, parking lot requirements, and trends.
+- **Revenue Calculation**: Generated revenue metrics based on Average Daily Rate (ADR) and stay duration.
+- **Data Visualization**: Created comprehensive visualizations in Power BI to showcase trends and insights.
+- **Advanced SQL Operations**: Performed data preprocessing and left joins with market segment and meal cost data.
+- **Insight Generation**: Identified trends such as revenue growth and ADR changes.
 
-1. Data Preprocessing: Scripts to clean and normalize data, ensuring it is ready for model training.
-2. Feature Engineering: Techniques to extract and select the most impactful features from financial data.
-3. Model Training: Detailed codebase for training ensemble models using cross-validation to ensure robustness.
-4. Evaluation: Metrics and methodologies to assess the performance of the predictive models accurately.
-5. Visualization: Tools to visualize data insights and model performance, facilitating easier interpretation and decision-making.
+ 
 
-This repository serves as a comprehensive resource for financial analysts, data scientists, and developers interested in applying machine learning to credit risk management. It includes detailed documentation for setting up the environment, running the models, and interpreting the results, making it accessible for both beginners and advanced users."
+This project aims to provide a comprehensive analysis of hotel booking data from 2018 to 2020 using SQL for data manipulation and Power BI for visualization. The goal is to identify trends, calculate revenue, and inform business decisions such as parking lot expansion and discount strategies.
+
+## Project Structure
+
+1. **Data Integration**:
+    - Combined hotel booking data from the years 2018, 2019, and 2020.
+    - Used SQL UNION operations to merge datasets.
+
+    ```sql
+    SELECT * FROM dbo.['2018$']
+    UNION
+    SELECT * FROM dbo.['2019$']
+    UNION
+    SELECT * FROM dbo.['2020$']
+    ```
+
+2. **Exploratory Data Analysis (EDA)**:
+    - Answered key questions:
+        - Is our hotel revenue growing yearly?
+        - Should we increase our parking lot size?
+        - What trends can we see in the data?
+
+    - Created a temporary table for ease of analysis:
+
+    ```sql
+    WITH hotels AS (
+        SELECT * FROM dbo.['2018$']
+        UNION
+        SELECT * FROM dbo.['2019$']
+        UNION
+        SELECT * FROM dbo.['2020$']
+    )
+    SELECT * FROM hotels;
+    ```
+
+3. **Revenue Calculation**:
+    - Calculated revenue using Average Daily Rate (ADR) and stay duration:
+
+    ```sql
+    SELECT
+        (stays_in_week_nights + stays_in_weekend_nights) * adr AS revenue
+    FROM hotels;
+    ```
+
+4. **Data Preprocessing**:
+    - Performed left join operations to integrate market segment and meal cost data:
+
+    ```sql
+    WITH hotels AS (
+        SELECT * FROM dbo.['2018$']
+        UNION
+        SELECT * FROM dbo.['2019$']
+        UNION
+        SELECT * FROM dbo.['2020$']
+    )
+    SELECT * FROM hotels
+    LEFT JOIN dbo.market_segment$ ON hotels.market_segment = market_segment$.market_segment
+    LEFT JOIN dbo.meal_cost$ ON meal_cost$.meal = hotels.meal;
+    ```
+
+5. **Data Visualization in Power BI**:
+    - Connected Power BI to the SQL Server database.
+    - Used SQL query to fetch the combined and preprocessed data:
+
+    ```sql
+    WITH hotels AS (
+        SELECT * FROM dbo.['2018$']
+        UNION
+        SELECT * FROM dbo.['2019$']
+        UNION
+        SELECT * FROM dbo.['2020$']
+    )
+    SELECT * FROM hotels
+    LEFT JOIN dbo.market_segment$ ON hotels.market_segment = market_segment$.market_segment
+    LEFT JOIN dbo.meal_cost$ ON meal_cost$.meal = hotels.meal;
+    ```
+
+    - Created visualizations to display key insights:
+        1. Revenue trends from 2018 to 2020.
+        2. Average Daily Rate (ADR) changes.
+        3. Booking trends and customer stay patterns.
+        4. Discount strategies impact.
+
+## Insights and Findings
+
+1. **Revenue Trends**:
+    - Revenue increased from 2018 to 2019.
+    - Revenue decreased from 2019 to 2020.
+
+2. **Average Daily Rate (ADR)**:
+    - ADR increased from $99.53 in 2019 to $104.46 in 2020.
+
+3. **Booking Trends**:
+    - Total number of nights booked decreased from 2019 to 2020.
+
+4. **Discount Strategies**:
+    - The hotel increased discount percentages from 2019 to 2020 to attract more customers.
+
+## Conclusion
+
+This project demonstrates the effective use of SQL and Power BI for data integration, analysis, and visualization. By combining and analyzing hotel booking data over three years, valuable insights were gained to inform strategic business decisions.
+This Hotel Booking Data Analysis Project effectively utilized SQL and Power BI to integrate and analyze hotel booking data from 2018 to 2020. By combining datasets using SQL UNION operations and performing advanced SQL preprocessing, we created a comprehensive data foundation for analysis. The exploratory data analysis (EDA) provided critical insights into revenue growth, parking lot requirements, and booking trends. Calculating revenue metrics based on the Average Daily Rate (ADR) and stay duration revealed fluctuations in revenue and ADR over the years. Data visualizations in Power BI highlighted key insights such as revenue trends, ADR changes, and booking patterns, facilitating informed business decisions regarding parking lot expansion and discount strategies. Overall, this project showcases the power of SQL and Power BI in driving data-driven decisions in the hospitality industry.
+
+## Requirements
+
+- SQL Server
+- Power BI Desktop
+
+
+
