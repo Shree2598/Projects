@@ -127,4 +127,5 @@ This Hotel Booking Data Analysis Project effectively utilized SQL and Power BI t
 - Data Warehousing 
 
 
+![image](https://github.com/user-attachments/assets/1b7c60d7-32d7-490e-b6e8-65abf6c7f7d9)
 
