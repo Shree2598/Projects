@@ -1,7 +1,6 @@
 
 ![image](https://github.com/user-attachments/assets/8cc77d05-da46-4c59-8592-3141afc16591)
 
-
 # Projects-- 
 
 
@@ -131,5 +130,109 @@ This Hotel Booking Data Analysis Project effectively utilized SQL and Power BI t
 - Data Warehousing 
 
 
+# 2] Indian General Election 2024 Result Analysis Using SQL  
+
+This project performs end-to-end real-time data analysis on the 2024 Indian General (Lok Sabha) Elections using SQL Server. It simulates an industry-grade SQL development environment with a multi-table relational schema, complex queries, and insight extraction based on real-world data.   
+
+
+![Screenshot 2025-05-27 204547](https://github.com/user-attachments/assets/e5daf5f2-3df9-41be-adb6-bb15b86c2f3f)
+
+
+# Project Objective
+To extract, model, and analyze publicly available election data of the 2024 Indian General Elections using SQL Server. This includes:
+
+Identifying vote distributions
+
+Analyzing party and alliance performance
+
+Breaking down state-wise and constituency-wise results
+
+Understanding margins of victory and top-performing candidates
+
+# Tech Stack
+Database: SQL Server Management Studio (SSMS)
+
+Language: T-SQL (Transact-SQL)
+
+Data Source: Real-time election data scraped from Kaggle and public records
+
+Tables Used:
+
+Constituency_Wise_Details
+
+Constituency_Results
+
+Party_Wise_Results
+
+State_Wise_Results
+
+States
+
+ # Process Overview
+## 1. Database Setup & Schema Design
+Created a new database: India_Election_Results.
+
+Imported 5 CSV datasets using SSMS’s Flat File Import Wizard.
+
+Normalized the schema with primary and foreign key relationships.
+
+Designed an ER Diagram to visualize table relations (fact and dimension tables).
+
+## 2. Schema Relationships
+Fact Table: Constituency_Results
+
+Dimension Tables: States, Party_Wise_Results, Constituency_Wise_Details, State_Wise_Results
+
+Foreign Keys linked on:
+
+Constituency_ID
+
+State_ID
+
+Party_ID
+
+Parliament_Constituency
+
+## Key Problem Statements Solved
+1] Total Seats in the Country
+
+2] Query to count all unique constituencies (543 seats).
+
+3] State-wise Seat Distribution
+
+4] Used joins to aggregate seat counts by state.
+
+5] Seats Won by NDA & INDIA Alliances
+
+6] Used CASE statements and hard-coded party lists to aggregate results.
+
+7] Alliance-Wise Victory Distribution
+
+8] Summarized which alliance dominated each state.
+
+9] Top 10 Candidates with Highest EVM Votes
+
+10] Margin of Victory Analysis
+
+11] Winner vs runner-up margin in each constituency.
+
+12] EVM vs Postal Votes Distribution
+
+13] Drill-down into voting patterns per method.
+
+14] Maharashtra-Specific Deep Dive
+
+15] Custom analysis for total candidates, parties, votes, and alliances.
+
+## Advanced SQL Concepts Used
+1] JOIN, INNER JOIN, LEFT JOIN
+
+2] GROUP BY, ORDER BY, HAVING
+
+3] CASE WHEN logic
+
+4] Aggregations: SUM, COUNT, DISTINCT, MAX, MIN
+
+5] Data cleaning and transformation during import
 
 
